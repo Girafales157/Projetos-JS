@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        body{
+            background-color: #202E42;
+        }
+
+        body:active{
+            background-color: #2a4051;
+        }
+
+
+        #fundo{
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            margin: auto;
+            text-align: center;
+            padding: 17%;
+        }
+
+        h1{
+            color: antiquewhite;
+            font-family: 'Poppins', sans-serif;
+
+            margin-top: 0%;
+            font-size: 300%;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        h1:hover{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+            margin-top: 0%;
+            font-size: 300%;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo">
+        <h1 id="outP"></h1>
+    </div>
+
+    <script type="text/javascript">
+        var h1 = document.getElementById("outP"),
+        fundo = document.getElementById("fundo"),
+        contador = 0;
+
+        fundo.onclick = function(){
+            contador++;
+            h1.innerHTML = "Você clicou<br>"+contador+"<br>vezes";
+        }
+
+
+        window.onload = function(){
+            h1.innerText = "Clique na tela";
+        }
+    </script>
+</body>
+</html>
