@@ -1,81 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta-Cliques</title>
+    <link rel="stylesheet" href="form.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-        body{
-            background-color: #202E42;
-        }
-
-        body:active{
-            background-color: #2a4051;
-        }
-
-
-        #fundo{
-            position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
-            margin: auto;
-            text-align: center;
-            padding: 17%;
-        }
-
-        h1{
-            color: antiquewhite;
-            font-family: 'Poppins', sans-serif;
-
-            margin-top: 0%;
-            font-size: 300%;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        h1:hover{
-            color: white;
-            font-family: 'Poppins', sans-serif;
-
-            margin-top: 0%;
-            font-size: 300%;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div id="fundo">
-        <h1 id="outP"></h1>
+    
+    <h1 id="titulo">Teste para Front-end Buscapé</h1>
+    <!--Publicar produto-->
+    <div id="form">
+
+        <!--formulario padrão-->
+        <h2>Publique um produto!</h2>
+
+        <h3>Nome do produto</h3>
+        <input type="text" id="nomeProduto" placeholder="Escreva o nome aqui..."><br>
+        
+        <h3>Preço</h3>
+        <input type="number" id="valorProduto" placeholder="Escreva o preço aqui..."><br>
+
+        <h3>Resumo do produto</h3>
+        <textarea id="resumoProduto" cols="30" rows="10" placeholder="Escreva um breve texto sobre o produto..."></textarea>
+        
+        <!--prós-->
+        <div id="pros">
+            <button type="button" id="adcPro">Adicionar pró</button>
+        </div>
+        
+        <!--contras-->
+        <div id="contras">
+            <button type="button" id="adcCon">Adicionar contra</button>
+        </div>
+
+        <!--perguntas frequentes-->
+        <div id="perguntas">
+            <button type="button" id="adcPer">Adicionar pergunta frequente</button>
+        </div>
+
+        <button type="button">Publicar produto</button>
+
     </div>
 
-    <script type="text/javascript">
-        var h1 = document.getElementById("outP"),
-        fundo = document.getElementById("fundo"),
-        contador = 0;
+    <!--Exibir produtos disponíveis-->
+    <div></div>
 
-        fundo.onclick = function(){
-            contador++;
-            h1.innerHTML = "Você clicou<br>"+contador+"<br>vezes";
-        }
-
-
-        window.onload = function(){
-            h1.innerText = "Clique na tela";
-        }
-    </script>
+    <!--Carrinho do usuário-->
+    <div></div>
 </body>
 </html>

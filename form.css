@@ -1,0 +1,52 @@
+/*
+tela de computador
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(255, 228, 120);
+}
+
+#titulo{
+    margin-top: 1.25%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#form{
+    background-color: white;
+    border-radius: 20px;
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 2.5%;
+}
+
+
+@media screen and (max-width: 412px){
+    /*
+    tela de celular
+    */
+
+    body{
+        margin: 0%;
+    }
+
+    #titulo{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #form{
+        background-color: white;
+        border-radius: 0%;
+
+        margin: 0%;
+        padding: 5%;
+    }
+}
